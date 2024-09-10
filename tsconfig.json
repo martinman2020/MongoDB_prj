@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES6",                          // 設置 ECMAScript 目標版本
+        "module": "ESNext",                       // 使用 ES 模組
+        "outDir": "./dist",                       // 輸出目錄
+        "rootDir": "./src",                       // 根目錄
+        "strict": true,                           // 啟用所有嚴格類型檢查選項
+        "esModuleInterop": true,                  // 啟用 ES 模塊互操作性
+        "forceConsistentCasingInFileNames": true, // 強制一致的檔案命名
+        "skipLibCheck": true,
+        "moduleResolution": "node"
+    },
+    "include": ["src", "types"],
+    "exclude": ["node_modules"]
+}
