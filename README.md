@@ -61,7 +61,7 @@
 - **Response**:
   - `201 Created`: If the relationship is successfully created.
   - Example:
-  ```json
+  ```html
   Game: "Genshin Impact" and relationship 
   (userId: "66deca2e5f852f9c71451c64" & gameId: "66dfdf45e2b1efaa054129c2") inserted successfully
   ```
@@ -135,7 +135,7 @@
 - **Details**:
   -This is done during the server setup or as part of a data seeding process.
   - Example:
-  ```json
+  ```text
   db.user.insertMany([
     {
       "username": "Ken",
