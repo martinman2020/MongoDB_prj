@@ -133,10 +133,10 @@
 - **Description**: User data is populated internally via the backend.
 - **Method**: db.users.insertMany({})
 - **Details**:
-  -This is done during the server setup or as part of a data seeding process.
+  This is done during the server setup or as part of a data seeding process.
   - Example:
   ```text
-  db.user.insertMany([
+  db.users.insertMany([
     {
       "username": "Ken",
       "email": "ken@example.com",
