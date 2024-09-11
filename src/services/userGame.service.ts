@@ -3,7 +3,7 @@ import { ObjectId } from 'mongodb';
 
 export async function fetchAllUsersWithGames() {
     const db = getDb();
-    const userGames = db.collection('userGames');
+    const userGames = db.collection(process.env.USERGAMES_COLLECTION_NAME);
 
     return await userGames.aggregate([
         {
@@ -40,7 +40,7 @@ export async function fetchAllUsersWithGames() {
 
 export async function fetchUserWithGames(userId: string) {
     const db = getDb();
-    const userGames = db.collection('userGames');
+    const userGames = db.collection(process.env.USERGAMES_COLLECTION_NAME);
 
     return await userGames.aggregate([
         {
